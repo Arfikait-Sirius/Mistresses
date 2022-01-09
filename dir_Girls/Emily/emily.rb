@@ -10,7 +10,7 @@ class Emily
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_disp_line( message )
+    def self.fn_disp_line( message )
         puts( message )
     end
 end

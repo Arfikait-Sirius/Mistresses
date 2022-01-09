@@ -10,7 +10,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_count( base, target )
+    def self.fn_count( base, target )
         return base.scan( target ).length
     end
 
@@ -21,7 +21,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_copy( base )
+    def self.fn_copy( base )
         return base
     end
 
@@ -32,7 +32,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_replace( base, target, replacement )
+    def self.fn_replace( base, target, replacement )
         return base.sub( target, replacement )
     end
 
@@ -43,7 +43,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_split( base, splitter, index )
+    def self.fn_split( base, splitter, index )
         return base.split( splitter )[index]
     end
 
@@ -54,7 +54,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_upper_all( base )
+    def self.fn_upper_all( base )
         return base.upcase
     end
 
@@ -65,7 +65,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_lower_all( base )
+    def self.fn_lower_all( base )
         return base.downcase
     end
 
@@ -76,7 +76,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_upper_first( base )
+    def self.fn_upper_first( base )
         upper = base.upcase
         lower = base.downcase
 
@@ -90,7 +90,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_get_substring( base, format_str )
+    def self.fn_get_substring( base, format_str )
         if base.length < format_str.length
             return nil
         end
@@ -118,7 +118,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_trim( base )
+    def self.fn_trim( base )
         return base.gsub( /^[ \t]*/, "" ).gsub( /[ \t]*$/, "" )
     end
 
@@ -129,7 +129,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_from_int( number )
+    def self.fn_from_int( number )
         return number.to_s
     end
 
@@ -140,7 +140,7 @@ class Louise
     # :[ CATEGORY ]:
     #     Skill
     #------------------------
-    def fn_find( base, target )
+    def self.fn_find( base, target )
         return base.index( target ) + 1
     end
 end
