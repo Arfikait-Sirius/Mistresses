@@ -10,6 +10,7 @@ IF NOT exist %DIR_MISTRESSES% (
 
 copy .\dir_Girls\Emily\emily.rb %DIR_GIRLS%\. > NUL
 copy .\dir_Girls\Louise\louise.rb %DIR_GIRLS%\. > NUL
+copy .\dir_Girls\Tina\tina.rb %DIR_GIRLS%\. > NUL
 
 copy .\dir_Modules\mistresses.rb %1\. > NUL
 
