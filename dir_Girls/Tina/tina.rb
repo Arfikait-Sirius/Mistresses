@@ -8,8 +8,8 @@ class Tina
     LABEL_JUDGE = "[     JUDGE]: "
     LABEL_PRINT = "[     PRINT]: "
 
-    girl_name = ""
-    skill_name = ""
+    @@girl_name = ""
+    @@skill_name = ""
 
     #------------------------
     # :[ NAME ]:
@@ -19,9 +19,9 @@ class Tina
     #     Skill
     #------------------------
     def self.fn_set_girl_name( name )
-        girl_name = name
+        @@girl_name = name
 
-        puts( "#{LABEL_GIRLS_NAME}#{girl_name}" )
+        puts( "#{LABEL_GIRLS_NAME}#{@@girl_name}" )
 
         return
     end
@@ -34,7 +34,7 @@ class Tina
     #     Skill
     #------------------------
     def self.fn_set_skill_name( target )
-        skill_name = target
+        @@skill_name = target
 
         puts( "#{LABEL_TARGET}#{target}()" )
 
@@ -53,7 +53,7 @@ class Tina
         if judgement
             puts( "#{LABEL_JUDGE}OK" )
         else
-            puts( "#{LABEL_JUDGE}NG - Please check#{skill_name}" )
+            puts( "#{LABEL_JUDGE}NG - Please check #{@@skill_name}" )
         end
 
         return
